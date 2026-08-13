@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [react()],
 
   // For GitHub Pages deployment
-  base: '/portfolio-_2026/', 
+  base: '/portfolio/', 
 
   resolve: {
     alias: {
