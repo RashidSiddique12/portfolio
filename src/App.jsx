@@ -152,18 +152,17 @@ function App() {
 
       {/* Navigation */}
       <nav
-        className={`fixed w-full z-50 transition-all duration-300 ${
-          scrolled
+        className={`fixed w-full z-50 transition-all duration-300 ${scrolled
             ? "bg-slate-950/80 backdrop-blur-md border-b border-cyan-900/30"
             : "bg-transparent"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0 flex items-center gap-2">
               <Cpu className="text-cyan-400 w-8 h-8" />
               <span className="text-xl md:text-2xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                Md Rashid Sidique
+                Md Rashid Siddique
               </span>
             </div>
 
@@ -180,8 +179,8 @@ function App() {
                   </a>
                 ))}
                 <a
-                  href={`${import.meta.env.BASE_URL}Md_Rashid_Sidique_1.pdf`}
-                  download="Md_Rashid_Sidique_Resume.pdf"
+                  href={`${import.meta.env.BASE_URL}Md_Rashid_Siddique.pdf`}
+                  download="Md_Rashid_Siddique_Resume.pdf"
                   className="border border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 px-4 py-1.5 rounded-full text-sm transition-all flex items-center gap-2"
                 >
                   <Download size={14} /> Resume
@@ -226,7 +225,7 @@ function App() {
         <NetworkAnimation />
 
         <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/20 text-cyan-400 text-sm font-mono animate-pulse">
-          2+ Years Experience
+          3 Years Experience
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
@@ -234,11 +233,11 @@ function App() {
           </span>
         </h1>
         <p className="text-xl md:text-2xl text-slate-400 mb-8 max-w-3xl">
-          Full-Stack Software Engineer with 2+ years of experience building
-          scalable web and mobile applications using{" "}
+          Full-Stack Software Engineer with 3 years of experience building
+          scalable web applications using{" "}
           <span className="text-cyan-400">React.js</span>,{" "}
           <span className="text-cyan-400">Node.js</span>,{" "}
-          <span className="text-cyan-400">Flutter</span>, MongoDB, and
+          <span className="text-cyan-400">TypeScript</span>, MongoDB, and
           PostgreSQL.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
@@ -274,8 +273,7 @@ function App() {
               <span className="text-cyan-400 font-semibold">
                 Full-Stack Software Engineer
               </span>{" "}
-              with 2+ years of experience building scalable web and mobile
-              applications for enterprise use cases.
+              with 3 years of experience building scalable web applications for enterprise use cases.
             </p>
             <p>
               Currently working at{" "}
@@ -287,7 +285,7 @@ function App() {
             <p>
               I am skilled in{" "}
               <span className="text-cyan-400">
-                React.js, Redux ToolKit, Node.js, Express.js Flutter, and
+                React.js, TypeScript, Node.js, Express.js, NestJS, and
                 PostgreSQL,
               </span>{" "}
               with strong experience in API design, performance optimization,
@@ -374,20 +372,20 @@ function App() {
                 className="bg-slate-950 p-6 rounded-xl border border-slate-800 hover:border-cyan-500/30 transition-all duration-300 group"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  {category === "Languages" && (
-                    <Code className="text-cyan-400" />
-                  )}
                   {category === "Frontend" && (
                     <Layout className="text-purple-400" />
                   )}
                   {category === "Backend" && (
                     <Server className="text-green-400" />
                   )}
-                  {category === "Mobile" && <Cpu className="text-blue-400" />}
                   {category === "Databases" && (
                     <Database className="text-pink-400" />
                   )}
-                  {category === "Tools_Concepts" && (
+                  {category === "AI_Integrations" && <Cpu className="text-blue-400" />}
+                  {category === "Testing_Tools" && (
+                    <Code className="text-cyan-400" />
+                  )}
+                  {category === "Engineering" && (
                     <Layers className="text-amber-400" />
                   )}
                   <h3 className="text-xl font-bold text-slate-100 capitalize">
@@ -404,19 +402,18 @@ function App() {
                       </div>
                       <div className="w-full bg-slate-800 rounded-full h-1.5">
                         <div
-                          className={`bg-gradient-to-r ${
-                            category === "Languages"
-                              ? "from-cyan-500 to-teal-400"
-                              : category === "Frontend"
-                                ? "from-purple-500 to-cyan-500"
-                                : category === "Backend"
-                                  ? "from-green-500 to-emerald-400"
-                                  : category === "Mobile"
+                          className={`bg-gradient-to-r ${category === "Frontend"
+                              ? "from-purple-500 to-cyan-500"
+                              : category === "Backend"
+                                ? "from-green-500 to-emerald-400"
+                                : category === "Databases"
+                                  ? "from-pink-500 to-rose-400"
+                                  : category === "AI_Integrations"
                                     ? "from-blue-500 to-indigo-400"
-                                    : category === "Databases"
-                                      ? "from-pink-500 to-rose-400"
+                                    : category === "Testing_Tools"
+                                      ? "from-cyan-500 to-teal-400"
                                       : "from-amber-500 to-yellow-400"
-                          } h-1.5 rounded-full transition-all duration-1000 ease-out`}
+                            } h-1.5 rounded-full transition-all duration-1000 ease-out`}
                           style={{ width: `${skill.level}%` }}
                         ></div>
                       </div>
@@ -545,22 +542,15 @@ function App() {
                 <li className="flex items-start gap-2 text-slate-300 text-sm">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5"></div>
                   <span>
-                    <strong className="text-white">Coursera:</strong>{" "}
-                    Introduction to Front-End Development
-                  </span>
-                </li>
-                <li className="flex items-start gap-2 text-slate-300 text-sm">
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5"></div>
-                  <span>
-                    <strong className="text-white">Coursera:</strong>{" "}
-                    Object-Oriented Programming in Java
-                  </span>
-                </li>
-                <li className="flex items-start gap-2 text-slate-300 text-sm">
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5"></div>
-                  <span>
                     <strong className="text-white">GeeksforGeeks:</strong> Data
                     Structures and Algorithms
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-slate-300 text-sm">
+                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5"></div>
+                  <span>
+                    <strong className="text-white">Infosys Springboard:</strong> Database
+                    Management Systems (DBMS)
                   </span>
                 </li>
               </ul>
@@ -775,7 +765,7 @@ function App() {
 
       {/* Footer */}
       <footer className="py-8 text-center text-slate-500 text-sm bg-slate-950 border-t border-slate-900">
-        <p>Designed & Built by Md Rashid Sidique</p>
+        <p>Designed & Built by Md Rashid Siddique</p>
         {/* <p className="mt-2 font-mono text-xs">
           React.js · Tailwind CSS · Lucide Icons
         </p> */}

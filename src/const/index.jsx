@@ -10,86 +10,94 @@ export const navigation = [
     { name: "Contact", href: "#contact" },
   ];
 
- export const skills = {
-    Languages: [
-      { name: "JavaScript", level: 95 },
-      { name: "TypeScript", level: 85 },
-      { name: "Dart", level: 82 },
-      { name: "Java", level: 75 },
-    ],
+export const skills = {
     Frontend: [
       { name: "React.js", level: 97 },
+      { name: "TypeScript", level: 85 },
+      { name: "JavaScript", level: 95 },
       { name: "Redux Toolkit", level: 90 },
+      { name: "Redux Saga", level: 85 },
       { name: "HTML & CSS", level: 97 },
-      { name: "AngularJS", level: 80 },
-      { name: "UI Libraries", level: 95 },
+      { name: "WebSockets/Socket.IO", level: 85 },
+      { name: "Angular", level: 80 },
     ],
     Backend: [
       { name: "Node.js", level: 95 },
       { name: "Express.js", level: 95 },
       { name: "NestJS", level: 85 },
-    ],
-    Mobile: [
-      { name: "Flutter", level: 85 },
+      { name: "Python", level: 75 },
+      { name: "FastAPI", level: 75 },
     ],
     Databases: [
+      { name: "PostgreSQL", level: 85 },
       { name: "MongoDB", level: 90 },
-      { name: "PostgreSQL", level: 80 },
+      { name: "SQL", level: 85 },
       { name: "MySQL", level: 85 },
     ],
-    Tools_Concepts: [
-      { name: "Docker", level: 75 },
-      { name: "PWA", level: 86 },
-      { name: "Git & Postman", level: 90 },
-      { name: "Unit Testing (Vitest)", level: 90 },
-      { name: "Data Structures and Algorithms (DSA)", level: 90 },
+    AI_Integrations: [
+      { name: "Google Gemini API", level: 85 },
+      { name: "Firebase", level: 80 },
+      { name: "OpenStreetMap", level: 80 },
+      { name: "Blockchain APIs", level: 75 },
+      { name: "Razorpay", level: 85 },
     ],
-  };
+    Testing_Tools: [
+      { name: "Jest & Vitest", level: 90 },
+      { name: "Playwright", level: 80 },
+      { name: "Swagger & Postman", level: 90 },
+      { name: "Git & GitHub", level: 90 },
+    ],
+    Engineering: [
+      { name: "Agile/Scrum & SDLC", level: 90 },
+      { name: "Unit Testing & Debugging", level: 90 },
+      { name: "Feature Ownership", level: 95 },
+      { name: "200+ DSA on LeetCode", level: 85 },
+    ],
+};
 
- export  const experience = [
-      {
-        company: "AgNext Technologies",
-        role: "SDE-I",
-        duration: "03/2025 - Present",
-        location: "Mohali, India",
-        description:
-          "Building scalable enterprise web and mobile platforms for workflow, audit, and analytics systems.",
-        points: [
-          "Designed and developed scalable full-stack applications using React.js, Node.js (Express/NestJS), PostgreSQL, and MongoDB.",
-          "Built configurable analytics dashboards and dynamic form builder systems for client-specific workflows and reports.",
-          "Integrated blockchain verification APIs, OpenStreetMap geo-validation, and Firebase push notifications for secure real-time audit submissions.",
-          "Optimized frontend and backend performance through lazy loading, API optimization, cron jobs, queues, and webhook automation.",
-          "Developed a cross-platform auditor app using Flutter and Dart with dynamic form rendering, configurable validations, and REST API synchronization.",
-        ],
-      },
-      {
-        company: "AgNext Technologies",
-        role: "Software Engineer (Contract)",
-        duration: "02/2024 - 02/2025",
-        location: "Mohali, India",
-        description:
-          "Delivered core full-stack modules for production operations and workflow automation.",
-        points: [
-          "Implemented User Management, Client Management, Agency Management, Asset Tracking, and Order Tracking modules.",
-          "Implemented Role-Based Access Control (RBAC), webhooks, and automated email workflows.",
-          "Designed REST APIs, database schemas, and UI components using React.js, Chakra UI, and Ant Design.",
-        ],
-      },
-      {
-        company: "MountBlue Technologies",
-        role: "Intern",
-        duration: "10/2023 - 02/2024",
-        location: "Bangalore, India",
-        description:
-          "Completed an intensive software engineering internship focused on modern development practices.",
-        points: [
-          "Completed a structured internship covering data structures, frontend, and backend development.",
-          "Built and deployed multiple web applications, with selected projects delivered for client deployment.",
-        ],
-      },
-    ];
+export const experience = [
+    {
+      company: "AgNext Technologies",
+      role: "Software Development Engineer-I",
+      duration: "03/2025 - Present",
+      location: "Mohali, India",
+      description: "Building scalable enterprise web applications for workflow, audit, and analytics systems.",
+      points: [
+        "Built and enhanced a configurable multi-client SaaS platform, developing 50+ REST APIs and 10+ enterprise features supporting 500+ workflows, 5,000+ forms, 25+ clients, and 1,000+ users.",
+        "Built React.js + TypeScript interfaces using Redux Toolkit/Saga, reusable components, dynamic forms, dashboards, responsive UI, and API integrations for complex enterprise workflows.",
+        "Developed Node.js backend services using Express.js/NestJS, PostgreSQL, and MongoDB, implementing JWT authentication, RBAC, webhooks, scheduled/background processing, and database optimization.",
+        "Reduced frontend page-load time from 8–10s to 1–2s through lazy loading, virtualization, memoization, API-call optimization, debouncing, and throttling.",
+        "Reduced API response time from 6–7s to 800–900ms through API/query optimization, caching, asynchronous processing, and database improvements.",
+        "Integrated Google Gemini API for laboratory-report processing across 300+ laboratories, reducing manual report-processing effort by approximately 90%.",
+        "Integrated Redis, WebSockets/Socket.IO, Firebase, OpenStreetMap, and Blockchain APIs for caching, real-time features, notifications, location/address workflows, and data verification; deployed production features using Docker and GitHub Actions/CI/CD.",
+      ],
+    },
+    {
+      company: "MountBlue Technologies (Client: AgNext)",
+      role: "Software Engineer (Consultant)",
+      duration: "02/2024 - 02/2025",
+      location: "Mohali, India",
+      description: "Developed backend APIs and business workflows for warehouse and transportation inspection data.",
+      points: [
+        "Developed a full-stack inspection platform used by 1,000+ client auditors for warehouse and truck inspections using Angular, JavaScript, Node.js, and REST APIs.",
+        "Developed backend APIs and business workflows for capturing, processing, and managing warehouse and transportation inspection data across multiple clients.",
+        "Implemented configurable report-generation workflows based on client-specific business and reporting requirements.",
+        "Developed GPS/location movement tracking and selfie-based attendance marking for auditors to support field-audit operations.",
+      ],
+    },
+    {
+      company: "MountBlue Technologies",
+      role: "Software Engineering Intern",
+      duration: "10/2023 - 02/2024",
+      location: "Bangalore, India",
+      description: "Completed an intensive software engineering internship focused on modern development practices.",
+      points: [
+        "Completed intensive software-engineering training covering data structures, frontend development, backend development, Git, testing, debugging, and software development practices.",
+        "Built web applications using modern frontend and backend technologies with emphasis on clean code, testing, and collaborative development.",
+      ],
+    },
+];
 
-    
 export const projects = [
   {
     title: "MediConnect",
@@ -97,18 +105,18 @@ export const projects = [
     problem:
       "Patients lack a single platform to discover hospitals/doctors, book appointments, and access prescriptions digitally. Hospitals need a streamlined way to manage doctors, schedules, and patient records.",
     description:
-      "Centralized healthcare platform connecting patients, hospitals, and doctors. Features patient portal (doctor search, appointment booking, digital prescriptions, reviews), hospital admin panel (doctor management, dynamic scheduling, prescription uploads), and super admin dashboard (hospital onboarding, analytics, moderation).",
+      "Independently built and deployed a full-stack healthcare platform with 50+ REST APIs and 30+ frontend pages supporting Patient, Hospital Admin, and Super Admin roles. Implemented appointment workflows, authentication, Redux Saga state management, MongoDB models, and Razorpay order, payment, refund, and webhook integrations.",
     highlights: [
-      "Architecture: RESTful API with Express middleware chain (auth → role check → validation → controller), Redux Saga for frontend async flow",
+      "Independently built and deployed a full-stack healthcare platform with 50+ REST APIs and 30+ frontend pages supporting Patient, Hospital Admin, and Super Admin roles.",
+      "Implemented appointment workflows, authentication, Redux Saga state management, MongoDB models, and Razorpay order, payment, refund, and webhook integrations.",
+      "Architecture: RESTful API with Express middleware chain, Redux Saga for frontend async flow",
       "Security: JWT with refresh token rotation, bcrypt hashing, Helmet headers, rate limiting, role-based access control",
-      "Data Integrity: Compound unique indexes to prevent double-booking, express-validator for all inputs, audit trail on prescriptions",
-      "Performance: Lazy-loaded routes, paginated API responses, debounced search",
     ],
-    tech: ["React 19", "Chakra UI", "Redux Toolkit", "Redux Saga", "Node.js", "Express", "MongoDB/Mongoose", "JWT", "Multer", "Cloudinary", "Swagger"],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Saga", "JWT", "Razorpay", "Swagger", "Cloudinary"],
     icon: <Layout className="w-6 h-6 text-teal-400" />,
     liveLink: "https://medi-connect-inky.vercel.app/",
     repoLink: "https://github.com/RashidSiddique12/mediConnect",
-    completionDate: "May 2026",
+    completionDate: "05/2026 – 06/2026",
   },
   {
     title: "Trello Clone",
@@ -146,4 +154,5 @@ export const projects = [
     liveLink: "https://todoist-app-iota.vercel.app/",
     repoLink: "https://github.com/RashidSiddique12/Todoist_FullStack/tree/main",
     completionDate: "Feb 2024",
-  },]
+  },
+];
